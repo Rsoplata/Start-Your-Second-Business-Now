@@ -94,6 +94,8 @@
     .bottom-inner { display: flex; align-items: center; justify-content: space-between; gap: 30px; }
     .bottom-inner h2 { max-width: 610px; margin: 0; font: 500 clamp(34px, 4vw, 52px)/1.02 var(--serif); letter-spacing: -.035em; }
     .bottom-inner .button { flex: 0 0 auto; background: var(--ink); }
+    .bottom-inner > div { display: grid; justify-items: start; gap: 13px; }
+    .signup-link { color: var(--ink); font-size: 12px; font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 3px; }
     footer { padding: 23px 0; background: var(--ink); color: #e4e4d9; }
     .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; font-size: 10px; color: #bdc0b5; }
     .footer-inner a { color: #e4e4d9; text-decoration: none; }
@@ -142,6 +144,7 @@
       .step, .step + .step { padding: 21px 0 24px; border-left: 0; border-bottom: 1px solid #c8c8bc; }
       .step h3 { margin: 13px 0 7px; }
       .bottom-inner { align-items: flex-start; flex-direction: column; }
+      .bottom-inner > div { grid-template-columns: 1fr; }
       .footer-inner { align-items: flex-start; flex-direction: column; }
     }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; } }
@@ -151,7 +154,7 @@
   <header class="topbar">
     <nav class="nav wrap" aria-label="Main navigation">
       <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">S</span><span>BUILD WHAT'S NEXT</span></a>
-      <div class="nav-links"><a href="#program">The program</a><a href="#pricing">Access options</a><a class="nav-cta" href="#pricing">Find your access <span aria-hidden="true">↗</span></a></div>
+      <div class="nav-links"><a href="#program">The program</a><a href="#pricing">Access options</a><a href="join.html">Email updates</a><a class="nav-cta" href="#pricing">Find your access <span aria-hidden="true">↗</span></a></div>
     </nav>
   </header>
   <main id="top">
@@ -203,7 +206,7 @@
         <div class="steps"><article class="step"><span class="step-num">01 / GET IN</span><h3>Pick your access</h3><p>Choose Basic, VIP, or Platinum based on the level of live support that feels right for you.</p></article><article class="step"><span class="step-num">02 / GET CONNECTED</span><h3>Meet your people</h3><p>Join the Facebook Group and find a community of people working toward their own next chapter.</p></article><article class="step"><span class="step-num">03 / GET MOVING</span><h3>Take the next step</h3><p>Use the community and, with VIP or Platinum, live Zoom access to keep building momentum.</p></article></div>
       </div>
     </section>
-    <section class="bottom-cta"><div class="bottom-inner wrap"><h2>Your next business won’t build itself. Let’s get started.</h2><a class="button" href="#pricing">Explore access options <span aria-hidden="true">→</span></a></div></section>
+    <section class="bottom-cta"><div class="bottom-inner wrap"><h2>Your next business won’t build itself. Let’s get started.</h2><div><a class="button" href="#pricing">Explore access options <span aria-hidden="true">→</span></a><a class="signup-link" href="join.html">Get email updates</a></div></div></section>
   </main>
   <footer><div class="footer-inner wrap"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">S</span><span>BUILD WHAT'S NEXT</span></a><span>Start Your Second Business Now</span><span>Pay with Zelle, Cash App, or PayPal</span></div></footer>
   <dialog id="checkout" aria-labelledby="checkout-title">
